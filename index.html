@@ -1,0 +1,106 @@
+<DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>samCoding.com javascript Fundamentals</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    
+</head>
+<body>
+    <div class="header">
+        <h1>Learning JavaScript</h1>
+        <p>with samCoding.com</p>
+    </div>
+    <div class="container"></div>
+    <script>
+        //Numver
+        //String
+        //Array
+        //Object
+     //   var number1 = '35';
+     //   var number2 = '25';
+     //   alert('My favorite number is '+number1);
+        //letter, number, underscore, dollar signs
+        //begin with a letter
+        // _ $
+
+        //Case sensitive
+      //  var test = 'This is a test';
+      //  var test = 'This is a another test'
+
+      //  alert(test);
+        //////////////////
+        //camel case
+      //  var myFavoriteNumber;
+     //   myFavoriteNumber = 5;
+        //partail case
+      //  var MyFavoriteNumber;
+        //underscore
+      //  var my_favorite_number;
+
+      //array
+     // var colors = ['red','blue','green'];
+     // alert(colors[1]);
+
+      // the other way to create array
+      var colors = new Array('red','blue','green');
+        //alert(colors[2]);
+     // how to push data to array
+        colors [3] = 'orenge';
+    // the better way to push data to array
+        colors.push('purple');
+       // alert(colors[4]);
+
+        var numbers = [5,77,88,'Seven'];
+      //  alert(numbers[0]+numbers[2]);
+      //  alert(numbers[3]);
+
+        // lenght of array
+      //  alert(numbers.length);
+        //sort array
+     //   alert(numbers.sort());
+     //   alert(numbers.reverse());
+
+     //Loop
+      console.log('Hello');
+     for (var i=0;i<=10;i++) {
+          console.log('I love JavaScript'+ i);
+       
+     }
+     var i;
+     while (i<10) {
+      console.log(i);
+      i++;
+       
+     }
+     var numbers = [33,45,66,77,88,2,6];
+     numbers.forEach(function(number){
+          console.log(number);
+     });
+     numbers.reverse();
+
+     for(var i=0;i<numbers.length;i++){
+       console.log(numbers[i]);
+     }
+
+     // if statement 
+     // === is to make sure that data type is the same
+     var var1 =3;
+     var var2 = 4;
+     if (var1 == var2 && var1 == 3 ) {
+       console.log('this is true.');
+     }else{
+       console.log('this is false');
+     }
+
+     var fruit = 'apple';
+     switch (fruit) {
+       case 'banana': alert('I hate banana.');break;
+       case 'apple': alert("I love apple."); break;
+       case 'orange': alert("Oranges are ok."); break;
+       default: alert('I love all other fruits.'); break;
+     }
+
+    </script>
+</body>
+</html>

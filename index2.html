@@ -1,0 +1,95 @@
+<DOCTYPE <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8" />
+        <title>samCoding.com javascript Fundamentals</title>
+        <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+        
+    </head>
+<body>
+    <div class="header">
+        <h1>Learning JavaScript</h1>
+        <p>with samCoding.com</p>
+    </div>
+    <div class="container"></div>
+
+    <script>
+    // Ojbect Literal
+    var person = {
+        firstName: 'Sam',
+        lastName: 'Lertkrai',
+        age: 34,
+        children: ['Boy', 'Girl'],
+        address: {
+            street: '170/177 tasak muang',
+            city: 'Nakornsithammarat',
+            state: 'Muang'
+        },
+        fullName: function() {
+            return this.firstName +" "+this.lastName;
+        }
+    }
+    console.log(person.age);
+    console.log(person.children[0]);
+    console.log(person.address.city);
+    console.log(person.fullName());
+
+    //Object Contructor
+    var apple = new Object();
+    apple.color = 'red';
+    apple.shape = 'round';
+    apple.describe = function () {
+        return 'An apple is the color '+ this.color+ ' and is the shape is '+ this.shape;
+    }
+
+    console.log(apple.describe());
+
+    //Constructor Pattern
+    function Fruit(name, color, shape) {
+        this.name = name;
+        this.color = color;
+        this.shape = shape;
+
+        this.descript = function(){
+            return 'A '+this.name+' is the color '+this.color+
+            ' and is the shape '+this.shape;
+        }
+        
+    }
+    var apple = new Fruit('apple','red','round');
+    var melon = new Fruit('melon','green','round');
+    console.log(apple);
+    console.log(melon.shape);
+    console.log(melon.descript());
+
+
+    //Array of Objects
+    var user = [
+        {
+            name: 'SAM',
+            age: 30
+        },
+        {
+            name: 'Boy',
+            age: 27
+        },
+        {
+            name: 'Girl',
+            age: 33
+        }
+    ];
+    console.log(user[0]);
+    console.log(user[0].name);
+
+    </script>
+
+
+
+
+
+
+</body>
+</html>
+
+
+
